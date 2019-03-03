@@ -41,13 +41,13 @@ class MusicLibraryController
     end
     end
     def list_artists
-      Artist.all.each.with_index(1) do |artist, i|
+      Artist.all.sort_by(&:name).each.with_index(1) do |artist, i|
       puts "#{i}. #{artist.name}"
     end
     end
     
     def list_genres
-      Genre.all.sort_by(&:name).each.with_index(1) do |genre, i|
+      Genre.all.each.with_index(1) do |genre, i|
       puts "#{i}. #{genre.name}"
     end
     end
