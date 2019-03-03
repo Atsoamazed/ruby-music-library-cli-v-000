@@ -50,6 +50,6 @@ class MusicLibraryController
       Genre.all. { |k, v| k }
       puts "#{i}. #{k.v}"
     end
-    end
+    
 end
 end
