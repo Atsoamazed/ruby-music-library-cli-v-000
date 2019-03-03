@@ -79,7 +79,7 @@ end
   def play_song
   puts "Which song number would you like to play?"
   input = gets.strip.to_i
-  list = Song.all.sort_by
+  list = Song.all.sort_by(&:name)
   puts "Playing #{song.name} by #{song.artist}" 
   
 
