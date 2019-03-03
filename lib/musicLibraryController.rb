@@ -82,6 +82,6 @@ end
   song = Song.all(input)
   puts "Playing #{song.name} by #{artist.name}"
   
-  if 
+
   end
 end
