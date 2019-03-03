@@ -47,7 +47,7 @@ class MusicLibraryController
     end
     
     def list_genres
-      Genre.all. { |k, v| k }
+      Genre.all { |k, v| k }
       puts "#{i}. #{k.v}"
     end
     
