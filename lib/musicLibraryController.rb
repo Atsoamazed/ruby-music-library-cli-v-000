@@ -81,7 +81,7 @@ end
   input = gets.strip.to_i
   list = Song.all.sort_by(&:name)
   unless list = nil
-  puts "Playing #{song.name} by #{song.artist}" 
+  puts "Playing #{song.name} by #{song.artist.name}" 
   
   end
   end
