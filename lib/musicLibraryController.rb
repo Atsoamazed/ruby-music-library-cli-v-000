@@ -80,7 +80,7 @@ end
   puts "Which song number would you like to play?"
   input = gets.strip.to_i
   song = Song.all(input)
-  puts "Playing #{song.name} by #{artist.name}"
+  puts "Playing #{song} by #{artist.name}"
   
 
   end
