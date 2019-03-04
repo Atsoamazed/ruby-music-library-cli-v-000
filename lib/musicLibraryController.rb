@@ -80,7 +80,7 @@ end
     puts "Which song number would you like to play?"
     list = Song.all.sort_by(&:name)
     indx = gets.strip.to_i - 1
-    if indx >= 0 && index <= list.length
+    if indx >= 0 && indx <= list.length
       puts "Playing #{list[indx].name} by #{list[indx].artist.name}" unless list[indx] == nil
     end
   end
