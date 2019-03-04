@@ -81,7 +81,7 @@ end
     list = Song.all.sort_by(&:name)
     index = gets.strip.to_i - 1
     if index >= 0 && index <= list.length
-      puts "Playing #{index.list.name} by #{list.index.artist.name}" unless list[index] == nil
+      puts "Playing #{list[index].name} by #{list[index].artist.name}" unless list[index] == nil
     end
   end
 end
